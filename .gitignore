@@ -1,0 +1,6 @@
+## clear dist folder
+dist/
+
+## Ignore npm package
+node_modules
+package-lock.json
