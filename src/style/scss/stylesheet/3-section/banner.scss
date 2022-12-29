@@ -1,0 +1,73 @@
+.banner{
+  height: 641px;
+  border-radius: 60px;
+  // background: linear-gradient(103deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  // background: var(--primary-gradient);
+	background: linear-gradient(103.85deg, #F33F5E, #FA8550 , #FA50A2);
+  background-size: 400% 400%;
+	animation: transfusion 15s ease infinite;
+  overflow: hidden;
+}
+
+.banner-container-1 {
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  h1 {
+    font-weight: 500;
+    font-size: 76px;
+    line-height: 100%;
+  }
+  p {
+    max-width: 90%;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 140%;
+  }
+}
+
+.banner-container-1 > div {
+  margin-left: 5rem;
+}
+
+.banner-container-2 {
+  position: relative;
+  .girl-img, .elipse, .elipse::after, .elipse::before {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%);
+  }
+  .girl-img{
+    z-index: 1;
+  }
+  .elipse {
+    animation: pulse-2 15s ease-in infinite;
+  }
+  .elipse, .elipse::after, .elipse::before {
+    bottom: -20%;
+    width: 850px;
+    height: 850px;
+    border-radius: 50%;
+    opacity: 0.5;
+    border: 2px solid #FF949B;
+    background-color: transparent;
+  }
+
+  .elipse::after {
+    content: "";
+    display: block;
+    bottom: 85px;
+    width: 680px;
+    height: 680px;
+  }
+  .elipse::before {
+    content: "";
+    display: block;
+    bottom: 185px;
+    width: 480px;
+    height: 480px;
+  }
+}

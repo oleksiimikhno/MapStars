@@ -1,7 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const miniCss = require('mini-css-extract-plugin');
-// const CopyPlugin = require('copy-webpack-plugin');
+const CopyPlugin = require('copy-webpack-plugin');
 
 const APPDIR = 'src/';
 
@@ -13,7 +13,7 @@ module.exports = {
     devServer: {
         watchFiles: ["./src/*"],
         static: './dist',
-        port: 8080,
+        port: 3000,
         hot: true,
     },
     module: {
@@ -35,7 +35,12 @@ module.exports = {
         }),
         new miniCss({
             filename: './style/default.css',
-        })
+        }),
+        new CopyPlugin({
+            patterns: [
+              { from: "./src/assets", to: "assets" }
+            ],
+          }),
     ],
     output: {
         filename: '[name].js',

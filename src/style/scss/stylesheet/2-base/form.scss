@@ -1,0 +1,25 @@
+.form-group {
+  input, textarea {
+    border: none;
+    background: #F4F4F4;
+    border-radius: 30px;
+    &:focus {
+      border-color: #86b7fe;
+      box-shadow: var(--primary-shadow);
+    }
+  }
+
+  input {
+    max-height: 52px;
+  }
+
+  textarea{
+    min-height: 120px;
+    resize: none;
+  }
+
+  label {
+    left: 1rem;
+    top: -3px;
+  }
+}

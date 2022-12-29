@@ -1,12 +1,49 @@
+:root {
+	--primary-color: #F33F5E;
+	--secondary-color: #FA8550;
+
+
+	--white: #fff;
+	--blue-dark: #111A45;
+
+	--font-color: var(--blue-dark);
+
+	--border-color: var(--white);
+	--border-secondary-color: var(--blue-dark);
+	--header-bg-color: var(--white);
+	--primary-gradient: linear-gradient(103.85deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+	--primary-shadow: var(--secondary-color) 0 0px 20px, 5px 5px 15px 5px rgba(0,0,0,0);
+	
+}
+
 @import 'stylesheet/1-tools/index';
+@import 'stylesheet/2-base/index';
+@import 'stylesheet/3-section/index';
 
 
-		// themeFolder + '/stylesheet/*.scss', 
-		// themeFolder + '/stylesheet/1-tools/*.scss',
-		// themeFolder + '/stylesheet/2-base/*.scss',
-		// themeFolder + '/stylesheet/3-sections/*.scss',
-		// themeFolder + '/stylesheet/4-pages/*.scss'], ['sass']);
+@font-face {
+  font-family: "TT Firs Neue";
+	src: url("../../assets/fonts/TTFirsNeue-Regular.woff2") format("woff2");
+}
 
-* {
-  background-color: rgb(182, 175, 123);
+@font-face {
+  font-family: "TT Firs Neue";
+	src: url("../../assets/fonts/TTFirsNeue-DemiBold.woff2") format("woff2");
+	font-weight: 600;
+}
+
+@font-face {
+  font-family: "TT Firs Neue";
+  src: url("../../assets/fonts/TTFirsNeue-Bold.woff2") format("woff2");
+	font-weight: bold;
+}
+
+body {
+  font-family: "TT Firs Neue";
+  color: var(--font-color);
+  font-style: normal;
+}
+
+.nav-link, .nav-link {
+	color: var(--font-color);
 }

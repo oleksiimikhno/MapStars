@@ -1,0 +1,20 @@
+.btn {
+  padding: .8rem 2.6rem;
+  border-radius: 30px;
+  font-size: 1rem;
+}
+
+.btn-primary{
+  background: var(--primary-gradient);
+  border: 2px solid var(--border-color);
+  &:hover, &:active { 
+    box-shadow: var(--primary-shadow);
+    border-color: var(--border-color);
+  }
+}
+
+.btn-secondary {
+  padding: 1rem 3rem;
+  border: 2px solid var(--border-secondary-color);
+  background-color: var(--blue-dark);
+}

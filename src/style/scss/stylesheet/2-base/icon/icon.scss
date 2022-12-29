@@ -1,0 +1,92 @@
+.icon-item, .icon-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--white);
+  border-radius: 50%;
+  box-shadow: 0px 0px 7.4087px rgba(0, 0, 0, 0.12);
+}
+
+.icon-item {
+  position: absolute;
+  height: 64px;
+  width: 64px;
+  animation: pulse 5s ease-in infinite;
+
+  .icon-box {
+    width: 80%;
+    height: 80%;
+  }
+
+  img {
+    min-width: 50%;
+    min-height: 50%;
+  }
+
+  &.xs {
+    height: 80px;
+    width: 80px;
+    animation-delay: 2s;
+  }
+  &.md {
+    height: 95px;
+    width: 95px;
+    animation-delay: 1s;
+  }
+  &.lg {
+    height: 115px;
+    width: 115px;
+  }
+}
+
+.twitter {
+  top: 38%;
+  left: 12%;
+}
+
+.facebook {
+  top: 12%;
+  right: 20%;
+}
+
+.google {
+  left: 11%;
+  bottom: 17%;
+}
+
+.googleadss {
+  right: 19%;
+  bottom: 35%;
+  z-index: 2;
+}
+
+.googlemap {
+  top: 21%;
+  left: 21%;
+}
+
+.instagram{
+  right: 8%;
+  bottom: 12%;
+}
+
+.linkidin {
+  top: 34%;
+  right: 30%;
+}
+
+.streetview {
+  top: 4%;
+  left: 26%;
+}
+
+.telegram {
+  top: 44%;
+  left: 22%;
+  animation-delay: 1.5s;
+}
+
+.whatsapp {
+  top: 29%;
+  right: 8%;
+}
