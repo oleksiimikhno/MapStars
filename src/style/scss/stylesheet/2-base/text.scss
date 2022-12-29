@@ -1,17 +1,26 @@
-.gradient-title {
+.gradient-text {
   background: var(--primary-gradient);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
   font-weight: bold;
+  color: transparent;
 }
 
-.bolt-title{
+h4.bolt-text{
   font-size: 2.2rem;
+  font-weight: bold;
+}
+
+.bolt-text{
   font-weight: bold;
 }
 
 .revers-text {
   color: var(--white);
+}
+
+.title-section {
+  font-size: 2.9rem;
 }

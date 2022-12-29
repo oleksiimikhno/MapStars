@@ -12,6 +12,18 @@
   }
 }
 
+.section-mt {
+  margin-top: 6.5rem;
+}
+
+.centered {
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
 .mb-45 {
   margin-bottom: 2rem !important;
 }
