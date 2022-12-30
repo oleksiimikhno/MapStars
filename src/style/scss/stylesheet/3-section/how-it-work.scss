@@ -1,0 +1,64 @@
+#how-it-work {
+  background-color: #FFF7F8;
+  border-radius: 60px;
+  padding-top: 5rem;
+  h2 {
+    font-size: 3.3rem;
+    & + p {
+      font-size: 1.4rem;
+    }
+  }
+
+  h3 {
+    font-size: 2.3rem;
+    font-weight: 600;
+  }
+  p.gradient-text {
+    font-weight: 100;
+    font-size: 1.2rem;
+  }
+  p {
+    font-size: 1.05rem;
+  }
+
+  & .row:nth-child(1n) {
+    padding-bottom: 2rem;
+  }
+
+  & .row:nth-child(2n) {
+    position: relative;
+    
+    bottom: -5rem;
+    padding-top: 5rem;
+    padding-bottom: 7rem;
+    background: #EAE9FB;
+    border-radius: 60px;
+  }
+
+  & .row:last-child {
+    position: relative;
+    padding-top: 5rem;
+    padding-bottom: 7rem;
+    background: #E5FBF1;
+    border-radius: 60px;
+    z-index: 2;
+  }
+
+  .images {
+    position: relative;
+
+    &.left img:last-child, &.right img:last-child {
+      position: absolute;
+      bottom: -10%;
+    }
+
+    &.right img:last-child {
+      right: -8%;
+    }
+
+    &.left img:last-child {
+      left: -8%;
+      
+    }
+  }
+}
