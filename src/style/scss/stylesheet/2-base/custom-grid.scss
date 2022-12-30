@@ -4,13 +4,21 @@
   }
 }
 
-.container-wrapper {
+.container-wrapper, .container-sm-wrapper {
   width: 100%;
-  max-width: 1480px;
   .row {
     margin: 0;
   }
 }
+
+.container-wrapper {
+  max-width: 1480px;
+}
+
+.container-sm-wrapper {
+  max-width: 1290px;
+}
+
 
 .section-mt {
   margin-top: 6.5rem;
