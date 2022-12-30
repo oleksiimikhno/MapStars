@@ -25,18 +25,20 @@
     padding-bottom: 2rem;
   }
 
-  & .row:nth-child(2n) {
+  & > .row:nth-child(2n) {
     position: relative;
     
-    bottom: -5rem;
-    padding-top: 5rem;
-    padding-bottom: 7rem;
+    bottom: -6rem;
+    padding-top: 3rem;
+    padding-bottom: 5rem;
     background: #EAE9FB;
     border-radius: 60px;
   }
 
-  & .row:last-child {
+  & > .row:last-child {
     position: relative;
+    margin-top: 1rem;
+    
     padding-top: 5rem;
     padding-bottom: 7rem;
     background: #E5FBF1;
@@ -46,6 +48,7 @@
 
   .images {
     position: relative;
+    max-height: 570px;
 
     &.left img:last-child, &.right img:last-child {
       position: absolute;
@@ -53,12 +56,11 @@
     }
 
     &.right img:last-child {
-      right: -8%;
+      right: 10%;
     }
 
     &.left img:last-child {
-      left: -8%;
-      
+      left: -10%;
     }
   }
 }

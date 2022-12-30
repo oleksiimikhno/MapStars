@@ -1,4 +1,9 @@
+.banner-section {
+  position: relative;
+}
+
 .banner{
+  overflow: hidden;
   height: 641px;
   border-radius: 60px;
 	background: linear-gradient(103.85deg, #F33F5E, #FA8550 , #FA50A2);
@@ -7,7 +12,7 @@
 }
 
 .banner-container-1 {
-  position: relative;
+ 
   h1 {
     font-weight: 500;
     font-size: 76px;
@@ -23,7 +28,7 @@
 .button-down {
   position: absolute;
   bottom: -9%;
-  left: 15%;
+  left: 6.5%;
   width: 115px;
   height: 115px;
   border-radius: 50%;
@@ -55,7 +60,6 @@
 
 .banner-container-2 {
   position: relative;
-  overflow: hidden;
   .girl-img, .elipse, .elipse::after, .elipse::before {
     position: absolute;
     bottom: 0;

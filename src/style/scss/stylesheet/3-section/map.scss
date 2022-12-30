@@ -1,0 +1,101 @@
+#map {
+  position: relative;
+  margin-top: 20rem;
+  padding-top: 5rem;
+  .map-desc {
+    position: absolute;
+    h5 {
+      margin-bottom: 0;
+      font-size: 14rem;
+      line-height: .9;
+      & + p {
+        max-width: 450px;
+        font-size: 2.8rem;
+        font-weight: 600;
+        
+      }
+    }
+  }
+}
+
+.map-icons {
+  & .twitter {
+    top: -2%;
+    left: 2%;
+  }
+
+  & .whatsapp {
+    top: -3%;
+    left: 23%;
+  }
+
+  & .google-map {
+    top: 26%;
+    left: 14%;
+  }
+
+  & .booking {
+    top: 33%;
+    left: -3%;
+  }
+
+  & .facebook {
+    top: 58%;
+    left: 18%;
+  }
+
+  & .telegram {
+    top: 70%;
+    left: 2%;
+  }
+
+  & .google-map2 {
+    top: 90%;
+    left: 17%;
+  }
+
+  & .google-map3 {
+    top: -2%;
+    left: 69%;
+  }
+
+  & .streetview {
+    top: -3%;
+    left: 93%;
+    img {
+      margin: 0 10px;
+    }
+  }
+
+  & .linkedin {
+    top: 13%;
+    left: 78%;
+    animation-delay: .4s;
+    img {
+      margin: 0 10px;
+    }
+  }
+
+  & .google-map4 {
+    top: 37%;
+    left: 94%;
+  }
+
+  & .instagram {
+    top: 71%;
+    left: 72%;
+    img {
+      margin: 0 10px;
+    }
+  }
+
+  & .google-map5 {
+    top: 77%;
+    left: 89%;
+  }
+
+  & .google-map6 {
+    top: 50%;
+    left: 82%;
+  }
+}
