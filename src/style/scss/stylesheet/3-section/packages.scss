@@ -1,0 +1,78 @@
+#packages {
+  padding-bottom: 5rem;
+  border-radius: 60px;
+  background-color: var(--blue-dark);
+
+  .d-grid {
+    grid-auto-flow: column;
+    gap: 30px;
+  }
+  h3 {
+    padding: 5.5rem 0 2.3rem;
+    font-size: 3.6rem;
+  }
+}
+.package {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 700px;
+  border-radius: 30px;
+  background-color: var(--white);
+  overflow: hidden;
+
+  h4 {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+
+  h5 {
+    font-size: 1.1rem;
+  }
+
+  button {
+    align-self: center;
+    width: 220px;
+  }
+
+  li {
+    position: relative;
+    margin-bottom: 5px;
+    padding-left: 15px;
+    list-style-type: none;
+  }
+
+  li::before {
+    display: block;
+    content: '';
+    position: absolute;
+    left: -18px;
+    height: 25px;
+    width: 25px;
+    background-image: url(/dist/assets/image/icon/list-marker.svg);
+    background-repeat: no-repeat;
+    font-size: 1.2em;
+  }
+}
+.package-header {
+  height: 118px;
+  align-content: center;
+  background-color: red;
+  line-height: 1.1;
+  p {
+    max-width: 85%;
+  }
+}
+
+.package:nth-of-type(1) .package-header {
+  background-color: #F4495C;
+}
+.package:nth-of-type(2) .package-header {
+  background-color: #F65859;
+}
+.package:nth-of-type(3) .package-header {
+  background-color: #F76B55;
+}
+.package:nth-of-type(4) .package-header {
+  background-color: #F98051;
+}
