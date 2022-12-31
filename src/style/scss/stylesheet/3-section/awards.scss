@@ -1,0 +1,23 @@
+#awards {
+  p {
+    font-size: 1.35rem;
+  }
+
+  .row {
+    
+    .img-wrapper {
+      display: inline-flex;
+      align-self: center;
+      justify-content: center;
+      width: 300px;
+      height: 160px;
+      margin-bottom: 2rem;
+      box-shadow: 0px 0px 7.4087px rgba(0, 0, 0, 0.12);
+      border-radius: 30px;
+
+      img {
+        align-self: center;
+      }
+    }
+  }
+}
