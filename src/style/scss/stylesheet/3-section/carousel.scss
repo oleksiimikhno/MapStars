@@ -1,0 +1,106 @@
+#carousel {
+  h5, p {
+    width: 100%;
+  }
+  
+  h5 {
+    font-size: 1.95rem;
+  }
+  
+  .carousel-indicators {
+    button {
+      position: relative;
+      width: 21px;
+      height: 21px;
+      margin: 0 15px;
+      border-radius: 50%;
+      border: 1px solid #fff;
+      background-color: #fff;
+      &::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        display: block;
+        height: 8px;
+        width: 8px;
+        border-radius: 50%;
+        background-color: #CECECE;
+        transform: translate(-50%, -50%);
+      }
+      &.active {
+        border-color: var(--primary-color);
+      }
+      &.active::after {
+        background-color:  var(--primary-color);
+      }
+    }
+  }
+}
+
+.carousel-control {
+  position: absolute;
+  top: 50%;
+  bottom: 50%;
+  transform: translateY(-50%);
+  width: 60px;
+  height: 60px;
+  animation: none;
+  &.prev {
+    transform: rotate(180deg);
+    transform: translateX(-100px) rotate(180deg);
+  }
+  &.next {
+    transform: translateX(100px);
+  }
+}
+
+.carousel-collages {
+  position: relative;
+  .collage {
+    height: 273px;
+    width: 252px;
+  }
+
+  .collage-text {
+    border-radius: 30px;
+    padding: 1.8rem;
+  
+    &:last-child {
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
+    }
+  
+    & p:first-child {
+      font-size: 1.25rem;
+      font-weight: 100;
+    }
+    & p:last-child {
+      font-size: 3.2rem;
+      font-weight: 600;
+    }
+  }
+
+  .collage-logo {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    left: 50%;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: var(--white);
+    transform: translate(-76%, -50%);
+
+    img {
+      position: absolute;
+      top: 50%;
+      right: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+
+
