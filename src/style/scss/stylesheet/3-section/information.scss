@@ -35,13 +35,12 @@
   }
 
   .information-block > div {
-    padding: 10rem 0;
+    padding: 6rem 0;
     line-height: 185%;
   }
 
   .information-slides {
-    padding-right: 0;
-    padding-left: 0;
+    padding: 2rem 0 4rem;
     background: linear-gradient(180deg, #F55859 0%, #F97852 33.27%, #CF52D1 70.77%, #5D49DC 100%);
   }
 
@@ -58,7 +57,7 @@
     .img-wrapper {
       display: flex;
       justify-content: end;
-      padding: 9rem 0;
+      padding: 6rem 0;
     }
 
     .img-wrapper:nth-of-type(3) {
@@ -66,7 +65,7 @@
     }
 
     .img-wrapper:last-child {
-      padding-top: 5rem;
+      padding-top: 0rem;
     }
 
   }
