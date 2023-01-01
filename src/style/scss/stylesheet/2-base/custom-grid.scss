@@ -39,3 +39,14 @@
 .mb-45 {
   margin-bottom: 2rem !important;
 }
+@media only screen and (max-width: 1400px)  {
+  .flow-grid {
+    display: grid;
+    max-width: calc(100vw - 25px);
+    grid-auto-flow: column;
+    overflow-x: auto;
+    div {
+      width: auto;
+    }
+  } 
+}

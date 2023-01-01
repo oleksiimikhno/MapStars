@@ -1,0 +1,53 @@
+#contact {
+  margin-top: 8.5rem;
+  p {
+    margin-bottom: 0;
+    font-size: 4.3rem;
+    font-weight: 500;
+  }
+
+  p:nth-child(2n) {
+    font-size: 6.2rem;
+    font-weight: 600;
+    line-height: 1;
+  }
+
+  button {
+    height: 255px;
+    width: 255px;
+    margin-left: 4.5rem;
+    border-radius: 50%;
+    font-size: 1.8rem;
+    font-weight: 500;
+  }
+
+  .contact-row {
+    a {
+      display: inline-block;
+      min-width: 100px;
+      max-width: 224px;
+      width: 100%;
+      padding: 1.5rem;
+      background: #FFF7F8;
+      border-radius: 40px;
+      color: var(--font-color);
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 140%;
+      text-decoration: none;
+      &:hover {
+        box-shadow: var(--primary-shadow);
+        border-color: var(--border-color);
+      }
+    }
+  }
+  @media only screen and (max-width: 1200px) {
+    text-align: center;
+    a {
+      margin: 1rem 0;
+    }
+    button {
+      margin-left: 0;
+    }
+  }
+}

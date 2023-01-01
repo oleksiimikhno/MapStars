@@ -2,9 +2,11 @@
   p {
     font-size: 1.35rem;
   }
-
   .row {
-    
+    div {
+      display: flex;
+      justify-content: center;
+    }
     .img-wrapper {
       display: inline-flex;
       align-self: center;
@@ -19,5 +21,11 @@
         align-self: center;
       }
     }
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  .img-wrapper {
+    margin-top: 2rem;
   }
 }

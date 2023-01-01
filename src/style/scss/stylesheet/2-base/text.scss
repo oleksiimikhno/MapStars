@@ -24,3 +24,9 @@ h4.bolt-text{
 .title-section {
   font-size: 2.9rem;
 }
+
+@media only screen and (max-width: 576px) {
+  h2.title-section {
+    font-size: 2rem;
+  }
+}

@@ -1,0 +1,58 @@
+.icon-item, .icon-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--white);
+  border-radius: 50%;
+  box-shadow: 0px 0px 7.4087px rgba(0, 0, 0, 0.12);
+}
+
+.icon-item {
+  position: absolute;
+  // height: 64px;
+  // width: 64px;
+  height: 3vw;
+  width: 3vw;;
+  animation: pulse 5s ease-in infinite;
+
+  .icon-box {
+    width: 80%;
+    height: 80%;
+  }
+
+  img {
+    min-width: 50%;
+    min-height: 50%;
+  }
+
+  &.xs {
+    // height: 80px;
+    // width: 80px;
+    height: 3.5vw;
+    width: 3.5vw;;
+    animation-delay: 2s;
+  }
+  &.md {
+    // height: 95px;
+    // width: 95px;
+    height: 4vw;
+    width: 4vw;;
+    animation-delay: 1s;
+  }
+  &.lg {
+    // height: 115px;
+    // width: 115px;
+    height: 5vw;
+    width: 5vw;;
+    animation-delay: 3s;
+  }
+}
+
+
+
+@media only screen and (max-width: 576px)  {
+  .icon-item {
+    height: 64px !important;
+    width: 64px !important;
+  }
+}

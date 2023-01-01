@@ -32,6 +32,12 @@
 
 @font-face {
   font-family: "TT Firs Neue";
+	src: url("../../assets/fonts/TTFirsNeue-Medium.woff2") format("woff2");
+	font-weight: 500;
+}
+
+@font-face {
+  font-family: "TT Firs Neue";
 	src: url("../../assets/fonts/TTFirsNeue-DemiBold.woff2") format("woff2");
 	font-weight: 600;
 }

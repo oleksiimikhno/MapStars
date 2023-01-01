@@ -12,7 +12,7 @@
       position: relative;
       width: 21px;
       height: 21px;
-      margin: 0 15px;
+      margin: 0 10px;
       border-radius: 50%;
       border: 1px solid #fff;
       background-color: #fff;
@@ -45,6 +45,7 @@
   transform: translateY(-50%);
   width: 60px;
   height: 60px;
+  opacity: 1;
   animation: none;
   &.prev {
     transform: rotate(180deg);
@@ -53,10 +54,31 @@
   &.next {
     transform: translateX(100px);
   }
+
+  button {
+    display: none !important;
+    background-color: #fff !important;
+  }
+
+  @media only screen and (max-width: 1200px) {
+    &.prev {
+      transform: translateX(0px) rotate(180deg);
+    }
+    &.next {
+      transform:  translateX(0px);
+    }  
+  }
 }
 
 .carousel-collages {
   position: relative;
+  
+  & > div:first-child {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+  }
+
   .collage {
     height: 273px;
     width: 252px;
@@ -91,14 +113,48 @@
     height: 150px;
     border-radius: 50%;
     background-color: var(--white);
-    transform: translate(-76%, -50%);
+    transform: translate(-50%, -50%);
 
     img {
       position: absolute;
+      padding: 20px;
       top: 50%;
       right: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
+    }
+  }
+
+}
+@media only screen and (max-width: 1200px) {
+  #carousel {
+    h5 {
+      text-align: center;
+    }
+  }
+
+  .collage-text p {
+    max-width: 50%;
+    font-size: 1.1rem !important;
+
+    &:last-child {
+      font-size: 3rem !important;
+    }
+  }
+
+
+  .carousel-inner {
+    padding-bottom: 2rem;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .carousel-collages .collage:nth-of-type(1) {
+    display: flex;
+    flex-direction: column;
+    p {
+      align-self: end;
+      max-width: 60% !important;
     }
   }
 }

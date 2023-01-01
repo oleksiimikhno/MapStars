@@ -4,7 +4,7 @@
 
 .banner{
   overflow: hidden;
-  height: 641px;
+  min-height: 641px;
   border-radius: 60px;
 	background: linear-gradient(103.85deg, #F33F5E, #FA8550 , #FA50A2);
   background-size: 400% 400%;
@@ -100,5 +100,85 @@
     bottom: 185px;
     width: 480px;
     height: 480px;
+  }
+}
+
+.twitter {
+  top: 38%;
+  left: 12%;
+}
+
+.facebook {
+  top: 12%;
+  right: 20%;
+}
+
+.google {
+  left: 11%;
+  bottom: 17%;
+}
+
+.googleadss {
+  right: 19%;
+  bottom: 35%;
+  z-index: 2;
+}
+
+.googlemap {
+  top: 21%;
+  left: 21%;
+}
+
+.instagram{
+  right: 8%;
+  bottom: 12%;
+}
+
+.linkidin {
+  top: 34%;
+  right: 30%;
+}
+
+.streetview {
+  top: 4%;
+  left: 26%;
+}
+
+.telegram {
+  top: 44%;
+  left: 22%;
+  animation-delay: 1.5s;
+}
+
+.whatsapp {
+  top: 29%;
+  right: 8%;
+}
+
+
+@media only screen and (max-width: 992px)  {
+  .banner-container-1 {
+    padding-top: 2rem;
+
+    & > div {
+      margin: 0 auto;
+    }
+  }
+  .banner-container-2 {
+    height: 700px;
+  }
+}
+
+@media only screen and (max-width: 576px)  {
+  .banner-container-1 {
+    text-align: center;
+    h1 {
+      font-size: 46px;
+    }
+    p {
+      max-width: 90%;
+      font-size: 24px;
+      line-height: 140%;
+    }
   }
 }
