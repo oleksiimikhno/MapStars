@@ -16,20 +16,6 @@ module.exports = {
                'sass-loader',
             ],
         },
-    
-        // {
-        //     test: /\.(png|jpg|gif)$/i,
-        //     use: [
-        //       {
-        //         loader: 'css-loader',
-        //         options: {
-        //             url: true,
-        //         }
-        //       },
-        //     ],
-        //   },
-    
-    
     ],
     },
     plugins: [
