@@ -14,7 +14,7 @@ module.exports = {
                miniCss.loader,
                'css-loader',
                'sass-loader',
-            ]
+            ],
         }],
     },
     plugins: [
