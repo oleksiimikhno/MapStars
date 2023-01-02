@@ -6,16 +6,7 @@ const CopyPlugin = require('copy-webpack-plugin');
 const APPDIR = 'src/';
 
 module.exports = {
-    mode: 'development',
     entry: './src/index.js',
-    devtool: 'inline-source-map',
-    watch: true,
-    devServer: {
-        watchFiles: ["./src/*"],
-        static: './dist',
-        port: 3000,
-        hot: true,
-    },
     module: {
         rules: [{
             test:/\.(s*)css$/,
@@ -27,6 +18,11 @@ module.exports = {
         }],
     },
     plugins: [
+        new CopyPlugin({
+            patterns: [
+              { from: "./src/assets", to: "assets" }
+            ],
+        }),
         new HtmlWebpackPlugin({
             title: "MapStars",
             filename: 'index.html',
@@ -36,19 +32,17 @@ module.exports = {
         new miniCss({
             filename: './style/default.css',
         }),
-        new CopyPlugin({
-            patterns: [
-              { from: "./src/assets", to: "assets" }
-            ],
-          }),
     ],
     output: {
         filename: '[name].js',
-        path: path.resolve(__dirname, 'dist'),
+        path: path.resolve(__dirname, '../'),
         clean: true,
         // publicPath: '/'
     },
     optimization: {
         runtimeChunk: 'single',
+    },
+    stats: {
+        errorDetails: true,
     },
 }
