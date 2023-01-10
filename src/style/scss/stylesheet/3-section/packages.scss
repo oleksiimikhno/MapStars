@@ -20,7 +20,8 @@
   border-radius: 30px;
   background-color: var(--white);
   overflow: hidden;
-
+  transform: translateZ(0);
+  
   ul {
     padding-left: 1rem;
   }
